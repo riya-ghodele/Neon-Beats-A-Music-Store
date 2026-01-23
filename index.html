@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neon Beats - Premium Music Store for Instruments & Accessories">
+  <meta name="keywords" content="music store, instruments, guitars, drums, audio gear">
+  <title>Neon Beats - Premium Music Store</title>
+  
+  
+  <!-- Icon Library - RemixIcon for consistent UI icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Custom Styles - Main CSS file -->
+  <link rel="stylesheet" href="styles.css?v=2.8">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+  
+  <!-- ==========================================
+       NAVIGATION BAR
+       Fixed top navigation with logo, menu links,
+       shopping cart, and sign in button
+       ========================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo with gradient text -->
+      <div class="nav-logo">
+        <img loading="lazy" src="assets/images/logo.png" alt="Neon Beats Logo" style="width: 32px; height: 32px; margin-right: 0.5rem;">
+        <span class="gradient-text">Neon Beats</span>
+      </div>
+      
+      <!-- Main Navigation Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#store" class="nav-link">Store</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+      
+      <!-- Navigation Actions: Cart and Login -->
+      <div class="nav-actions">
+        <button class="btn-icon cart-btn" id="cart-btn" title="Shopping Cart">
+          <i class="ri-shopping-cart-2-line"></i>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </button>
+        <button class="btn-primary" id="login-btn">Sign In</button>
+        <button class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION
+       Full-screen landing section with title,
+       description, CTA buttons, and stats
+       ========================================== -->
+  <section class="hero" id="home">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="gradient-text">Find Your Sound.</span><br>
+        Create Your Legacy.
+      </h1>
+      <p class="hero-description">
+        Discover premium instruments and audio gear.
+        From studio-grade microphones to stage-ready guitars, we have everything you need.
+      </p>
+      <!-- Call-to-Action Buttons -->
+      <div class="hero-buttons">
+        <a href="#store" class="btn-large btn-primary">
+          <i class="ri-shopping-bag-line"></i>
+          Shop Now
+        </a>
+      </div>
+      
+      <!-- Platform Statistics -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">2500+</div>
+          <div class="stat-label">Products</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15K+</div>
+          <div class="stat-label">Orders</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Brands</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Animated Scroll Indicator -->
+    <div class="scroll-indicator">
+      <i class="ri-arrow-down-s-line"></i>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MUSIC STORE SECTION
+       Product catalog with filtering
+       Products include guitars, keyboards, drums, accessories
+       ========================================== -->
+  <section class="store-section" id="store">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Products</h2>
+        <p>Premium instruments and accessories for music enthusiasts</p>
+      </div>
+      
+      <!-- Category Filters -->
+      <div class="store-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="guitars">Guitars</button>
+        <button class="filter-btn" data-filter="keyboards">Keyboards</button>
+        <button class="filter-btn" data-filter="drums">Drums</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+      
+      <!-- Products Grid - Dynamically populated by JavaScript -->
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ==========================================
+       ABOUT SECTION
+       Bento grid layout showcasing store features
+       Includes Quality, Shipping, Support, Warranty
+       ========================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="bento-header">
+        <h2>Why Neon Beats?</h2>
+        <p style="max-width: 600px; margin: 0 auto 3rem; color: var(--text-secondary); font-size: 1.1rem;">Premium music experience meets cutting-edge technology.</p>
+      </div>
+
+      <!-- Bento Grid - Various sized feature boxes -->
+      <!-- Bento Grid - Various sized feature boxes -->
+      <div class="bento-grid">
+        <div class="bento-box bento-large main-feat">
+           <div class="bento-icon-bg"><i class="ri-medal-line"></i></div>
+           <h3>Premium Quality</h3>
+           <p>All instruments are verified for quality and authenticity. We only stock the best brands in the industry.</p>
+        </div>
+
+        <div class="bento-box bento-tall bg-gradient">
+            <h3>Fast Shipping</h3>
+            <div class="mini-viz-bars">
+                <i class="ri-truck-line" style="font-size: 4rem; opacity: 0.8;"></i>
+            </div>
+            <p>Get your gear delivered to your doorstep in record time with our express shipping options.</p>
+        </div>
+
+        <div class="bento-box bento-tall">
+             <i class="ri-customer-service-2-line bento-icon-sm"></i>
+             <h3>Expert Support</h3>
+             <p class="text-sm">Our team of musicians is here to help you find the perfect instrument for your sound.</p>
+        </div>
+
+        <div class="bento-box bento-wide">
+            <div class="bento-content-row">
+                <div class="icon-circle"><i class="ri-shield-check-line"></i></div>
+                <div>
+                   <h3>Secure Warranty</h3>
+                   <p>Shop with confidence properly knowing your purchase is protected by our comprehensive warranty.</p>
+                </div>
+            </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT/NEWSLETTER SECTION
+       Email subscription form with gradient effects
+       ========================================== -->
+  <section class="contact-section-redesign" id="contact">
+    <div class="container">
+      <!-- Newsletter Hero -->
+      <div class="newsletter-hero">
+        <div class="newsletter-glow"></div>
+        <h2 class="gradient-text">Stay in the Loop</h2>
+        <p>Get exclusive offers, new product alerts, and musician tips delivered to your inbox.</p>
+        <form class="newsletter-form-hero" id="newsletter-form">
+          <div class="input-group-hero">
+            <i class="ri-mail-line"></i>
+            <input type="email" placeholder="Enter your email" required id="newsletter-email">
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </div>
+        </form>
+        <p class="newsletter-note">🔒 We respect your privacy. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       Site links, contact info, and social media
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>
+            <i class="ri-music-2-line"></i>
+            Neon Beats
+          </h3>
+          <p>Your ultimate destination for premium musical instruments and accessories.</p>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" title="Twitter"><i class="ri-twitter-fill"></i></a>
+            <a href="#" title="Instagram"><i class="ri-instagram-fill"></i></a>
+            <a href="#" title="YouTube"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#store">Store</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="ri-mail-line"></i> support@neonbeats.com</li>
+            <li><i class="ri-phone-line"></i> +1 (555) 123-4567</li>
+            <li><i class="ri-map-pin-line"></i> 123 Music Street, NY</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Neon Beats. All rights reserved. Made with <i class="ri-heart-fill"></i> for musicians.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SIDE PANELS
+       Shopping Cart
+       ========================================== -->
+        
+  <!-- Shopping Cart Panel: Displays cart items and checkout -->
+  <div class="cart-panel" id="cart-panel">
+    <div class="panel-header">
+      <h3><i class="ri-shopping-cart-2-line"></i> Shopping Cart</h3>
+      <button class="btn-icon" id="close-cart">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+    <div class="panel-content" id="cart-items">
+      <!-- Cart items will be inserted here -->
+    </div>
+    <div class="panel-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <button class="btn-primary btn-block" id="checkout-btn">
+        <i class="ri-secure-payment-line"></i> Checkout
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       UTILITY OVERLAYS
+       ========================================== -->
+        
+  <!-- Toast Notifications Container -->
+  <div class="notifications-container" id="notifications"></div>
+
+  <!-- Loading Overlay: Shown during initial page load -->
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- ==========================================
+       MODALS
+       Quick View, Checkout, and Success screens
+       ========================================== -->
+
+  <!-- Quick View Modal: Product preview with add to cart -->
+  <div id="quick-view-modal" class="modal">
+    <div class="modal-content glass-panel">
+      <span class="close-modal" id="close-quick-view">&times;</span>
+      <div class="quick-view-grid">
+        <div class="quick-view-image">
+          <img id="qv-image" src="" alt="Product">
+        </div>
+        <div class="quick-view-info">
+          <div class="qv-category" id="qv-category">Guitar</div>
+          <h2 id="qv-title">Fender Stratocaster</h2>
+          <div class="qv-rating" id="qv-rating">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="qv-description">Experience premium sound quality with this professional-grade instrument. Built for performance and durability.</p>
+          <div class="qv-price" id="qv-price">$1,499.99</div>
+          <button class="btn-primary" id="qv-add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal: Payment form for cart checkout -->
+  <div id="checkout-modal" class="modal">
+    <div class="modal-content glass-panel checkout-content">
+      <span class="close-modal" id="close-checkout">&times;</span>
+      <h2>Checkout</h2>
+      <div class="checkout-summary">
+        <div class="summary-row">
+          <span>Total items:</span>
+          <span id="checkout-count">0</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total:</span>
+          <span id="checkout-total">$0.00</span>
+        </div>
+      </div>
+      <form id="checkout-form" onsubmit="event.preventDefault(); window.processPayment();">
+        <div class="form-group">
+          <label>Card Number</label>
+          <input type="text" placeholder="**** **** **** ****" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Expiry</label>
+            <input type="text" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+            <label>CVC</label>
+            <input type="text" placeholder="123" required>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary btn-block">Pay Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Payment Success Overlay: Shown after successful checkout -->
+  <div id="success-overlay" class="overlay">
+    <div class="success-content">
+      <div class="checkmark-circle">
+        <div class="background"></div>
+        <div class="checkmark draw"></div>
+      </div>
+      <h2>Payment Successful!</h2>
+      <p>Thank you for your purchase! 🎸</p>
+      <button class="btn-primary" onclick="window.closeSuccess()">Continue Shopping</button>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript - Main application logic -->
+  <script src="script.js"></script>
+</body>
+</html>
