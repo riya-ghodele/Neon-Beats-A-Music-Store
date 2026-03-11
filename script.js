@@ -20,7 +20,7 @@ const products = [
   {
     id: 'p1',
     title: "Fender Stratocaster - Neon Edition",
-    price: 1499.99,
+    price: 125000,
     category: "guitars",
     image: "assets/images/fender_strat.jpg",
     rating: 4.9,
@@ -29,7 +29,7 @@ const products = [
   {
     id: 'p2',
     title: "Roland Synthesis Keyboard",
-    price: 899.99,
+    price: 75000,
     category: "keyboards",
     image: "assets/images/roland_synth.jpg",
     rating: 4.8,
@@ -38,7 +38,7 @@ const products = [
   {
     id: 'p3',
     title: "Yamaha Stage Drum Kit",
-    price: 1299.99,
+    price: 110000,
     category: "drums",
     image: "assets/images/yamaha_drums.jpg",
     rating: 4.7,
@@ -47,7 +47,7 @@ const products = [
   {
     id: 'p4',
     title: "Audio-Technica Master Headphones",
-    price: 199.99,
+    price: 16000,
     category: "accessories",
     image: "assets/images/audiotechnica.jpg",
     rating: 4.9,
@@ -56,7 +56,7 @@ const products = [
   {
     id: 'p5',
     title: "Gibson Les Paul Standard",
-    price: 2499.99,
+    price: 210000,
     category: "guitars",
     image: "assets/images/gibson_lespaul.jpg",
     rating: 5.0,
@@ -65,7 +65,7 @@ const products = [
   {
     id: 'p6',
     title: "Shure SM7B Vocal Mic",
-    price: 399.99,
+    price: 33000,
     category: "accessories",
     image: "assets/images/shure_sm7b.jpg",
     rating: 4.8,
@@ -74,7 +74,7 @@ const products = [
   {
     id: 'p7',
     title: "Korg Minilogue Poly-Synth",
-    price: 549.99,
+    price: 46000,
     category: "keyboards",
     image: "assets/images/korg_minilogue.jpg",
     rating: 4.6,
@@ -83,7 +83,7 @@ const products = [
   {
     id: 'p8',
     title: "Martin D-28 Acoustic",
-    price: 2999.99,
+    price: 250000,
     category: "guitars",
     image: "assets/images/martin_d28.jpg",
     rating: 5.0,
@@ -92,11 +92,29 @@ const products = [
   {
     id: 'p9',
     title: "Pioneer DJ Controller",
-    price: 800.00,
+    price: 67000,
     category: "accessories",
     image: "assets/images/pioneer_dj.jpg",
     rating: 4.7,
     description: "4-channel performance DJ controller for rekordbox dj."
+  },
+  {
+    id: 'p10',
+    title: "Roland V-Drums TD-17KVX",
+    price: 145000,
+    category: "drums",
+    image: "assets/images/roland_vdrums.png",
+    rating: 4.9,
+    description: "Premium electronic drum kit with mesh heads and Bluetooth connectivity."
+  },
+  {
+    id: 'p11',
+    title: "Pearl Export EXX Drum Set",
+    price: 90000,
+    category: "drums",
+    image: "assets/images/pearl_export.png",
+    rating: 4.6,
+    description: "The best-selling acoustic drum set of all time. Includes 6-ply poplar/mahogany shells."
   }
 ];
 
@@ -154,6 +172,23 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderProducts(filter = 'all') {
   const container = document.getElementById('products-grid');
   if (!container) return;
+
+  // Animate out existing products
+  const existingCards = container.querySelectorAll('.product-card');
+  if (existingCards.length > 0) {
+    existingCards.forEach(card => card.classList.add('filtering'));
+
+    // Wait for exit animation to complete before rendering new products
+    setTimeout(() => {
+      renderFilteredProducts(container, filter);
+    }, 300);
+  } else {
+    // Initial render
+    renderFilteredProducts(container, filter);
+  }
+}
+
+function renderFilteredProducts(container, filter) {
   container.innerHTML = '';
 
   // Filter products by category
@@ -187,7 +222,7 @@ function renderProducts(filter = 'all') {
         <div class="product-rating">
           ${getStarRating(product.rating)}
         </div>
-        <div class="product-price">$${product.price}</div>
+        <div class="product-price">₹${product.price}</div>
       </div>
     `;
 
@@ -271,6 +306,10 @@ function setupEventListeners() {
   const checkoutBtn = document.getElementById('checkout-btn');
   if (checkoutBtn) checkoutBtn.addEventListener('click', openCheckout);
 
+  // Sign In Button
+  const loginBtn = document.getElementById('login-btn');
+  if (loginBtn) loginBtn.addEventListener('click', openSignIn);
+
   // Close Modals
   document.querySelectorAll('.close-modal').forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -333,28 +372,41 @@ function updateCartUI() {
   let total = 0;
   let count = 0;
 
-  appState.cart.forEach(item => {
-    total += item.price * item.quantity;
-    count += item.quantity;
-
-    const cartItem = document.createElement('div');
-    cartItem.className = 'cart-item';
-    cartItem.innerHTML = `
-      <img loading="lazy" src="${item.image}" alt="${item.title}" class="cart-item-img">
-      <div class="cart-item-info">
-        <h4>${item.title}</h4>
-        <div class="cart-item-price">$${item.price.toLocaleString()} x ${item.quantity}</div>
+  if (appState.cart.length === 0) {
+    container.innerHTML = `
+      <div class="empty-cart-state">
+        <i class="ri-shopping-bag-3-line"></i>
+        <h3>Your Cart is Empty</h3>
+        <p>Looks like you haven't added any gear yet. Let's find your sound!</p>
+        <button class="btn-primary btn-sm" onclick="toggleCart(); document.getElementById('store').scrollIntoView();">
+          Browse Store
+        </button>
       </div>
-      <button class="remove-btn" onclick="removeFromCart('${item.id}')">
-        <i class="ri-close-line"></i>
-      </button>
     `;
-    container.appendChild(cartItem);
-  });
+  } else {
+    appState.cart.forEach(item => {
+      total += item.price * item.quantity;
+      count += item.quantity;
+
+      const cartItem = document.createElement('div');
+      cartItem.className = 'cart-item';
+      cartItem.innerHTML = `
+        <img loading="lazy" src="${item.image}" alt="${item.title}" class="cart-item-img">
+        <div class="cart-item-info">
+          <h4>${item.title}</h4>
+          <div class="cart-item-price">₹${item.price.toLocaleString()} x ${item.quantity}</div>
+        </div>
+        <button class="remove-btn" onclick="removeFromCart('${item.id}')">
+          <i class="ri-close-line"></i>
+        </button>
+      `;
+      container.appendChild(cartItem);
+    });
+  }
 
   // Update Total
   const totalEl = document.getElementById('cart-total');
-  if (totalEl) totalEl.textContent = '$' + total.toFixed(2);
+  if (totalEl) totalEl.textContent = '₹' + total.toFixed(2);
 
   // Update Badge
   const badge = document.getElementById('cart-badge');
@@ -386,7 +438,7 @@ function openQuickView(productId) {
   document.getElementById('qv-title').textContent = product.title;
   document.getElementById('qv-rating').innerHTML = getStarRating(product.rating);
   document.getElementById('qv-description').textContent = product.description;
-  document.getElementById('qv-price').textContent = `$${product.price}`;
+  document.getElementById('qv-price').textContent = `₹${product.price}`;
 
   // Update button to add specific product
   const btn = document.getElementById('qv-add-btn');
@@ -419,7 +471,7 @@ function openCheckout() {
   });
 
   document.getElementById('checkout-count').textContent = count;
-  document.getElementById('checkout-total').textContent = '$' + total.toFixed(2);
+  document.getElementById('checkout-total').textContent = '₹' + total.toFixed(2);
 
   modal.style.display = 'flex';
   setTimeout(() => {
@@ -462,6 +514,48 @@ window.closeSuccess = function () {
   setTimeout(() => {
     overlay.style.display = 'none';
   }, 300);
+};
+
+function openSignIn() {
+  const modal = document.getElementById('signin-modal');
+  if (!modal) return;
+
+  modal.style.display = 'flex';
+  setTimeout(() => {
+    modal.classList.add('active');
+  }, 10);
+}
+
+window.processSignIn = function () {
+  const modal = document.getElementById('signin-modal');
+  modal.classList.remove('active');
+  setTimeout(() => {
+    modal.style.display = 'none';
+  }, 300);
+
+  // Simulate authentication processing
+  const overlay = document.getElementById('loading-overlay');
+  overlay.style.display = 'flex';
+  overlay.style.visibility = 'visible';
+  overlay.style.opacity = '1';
+
+  setTimeout(() => {
+    overlay.style.opacity = '0';
+    overlay.style.visibility = 'hidden';
+
+    // Show success toast
+    showNotification('Welcome back! Successfully signed in.', 'success');
+
+    // Update login button to show logged in state
+    const loginBtn = document.getElementById('login-btn');
+    if (loginBtn) {
+      loginBtn.innerHTML = '<i class="ri-user-3-line"></i> Dashboard';
+      loginBtn.removeEventListener('click', openSignIn);
+      loginBtn.addEventListener('click', () => {
+        showNotification('Dashboard coming soon!', 'info');
+      });
+    }
+  }, 1200);
 };
 
 
