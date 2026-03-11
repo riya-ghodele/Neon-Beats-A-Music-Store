@@ -19,7 +19,8 @@ The single-page entry point. It contains all the views, modals, and templates.
 *   **Navigation**: Fixed header with smooth scroll links.
 *   **Sections**: Hero (`#home`), Store Grid (`#store`), About (`#about`), Newsletter (`#contact`).
 *   **Dynamic Containers**: Empty `div`s (like `#products-grid`, `#cart-items`) that JavaScript populates.
-*   **Modals**: Hidden-by-default overlays for `Quick View` and `Checkout`.
+*   **Modals**: Hidden-by-default overlays for `Quick View`, `Sign In`, and `Checkout`.
+*   **Localization**: Native integration of Indian Rupees (INR / `₹`) formatting across the UI and data layer.
 
 ### 2. `styles.css` (The Skin)
 Handles the visual presentation using a **Mobile-First** approach.

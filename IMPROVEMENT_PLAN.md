@@ -55,8 +55,8 @@ This document outlines a strategic plan to elevate the "Neon Beats" music store 
     3.  **Order Summary**: Final receipt view.
 
 ### 2. User Accounts (Mock)
-- **Upgrade**: innovative "Guest" vs "Member" experience.
-- **Feature**: Create a simple Login/Signup modal that saves user name and avatar to `localStorage`, personalizing the header ("Welcome, Alex").
+- **Status**: *Partially Implemented*. A stylish "Sign In" glassmorphic modal has been added to the UI with initial toggle logic.
+- **Next Step**: Connect the modal to `localStorage` to save user name and avatar, personalizing the header ("Welcome, Alex").
 
 ### 3. Reviews & Ratings System
 - **Upgrade**: Allow users to add reviews to products (saved locally for demo purposes).
