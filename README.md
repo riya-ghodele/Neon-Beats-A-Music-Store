@@ -4,12 +4,13 @@ A premium e-commerce experience for musical instruments, built with modern HTML,
 
 ## ✨ Features
 
-- **🛍️ Premium Product Catalog** - Curated selection of Guitars, Keyboards, Drums, and Accessories.
-- **🛒 Functional Shopping Cart** - Add items, view summary, and simulate checkout.
+- **🛍️ Premium Product Catalog** - 11 curated Guitars, Keyboards, Drums (including Roland & Pearl kits), and Accessories mapped to realistic INR (₹) pricing.
+- **🛒 Functional Shopping Cart** - Add items, view summary, and simulate checkout with a persistent sticky total footer and styled empty state.
+- **🔐 User Login / Sign In** - Interactive Sign In modal with seamless authentication simulation.
 - **🕶️ Quick View** - Instant product details modal without leaving the page.
 - **📱 Fully Responsive** - Beautiful glassmorphism design that works on all devices.
 - **📨 Newsletter** - Integrated subscription form.
-- **🎨 Modern UI** - Bento grid layout, smooth animations, and neon aesthetics.
+- **🎨 Modern UI** - Bento grid layout, smooth product filtering layout animations, and neon aesthetics.
 
 ## 🚀 Getting Started
 
