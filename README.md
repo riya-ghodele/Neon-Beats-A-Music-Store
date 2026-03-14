@@ -43,6 +43,9 @@ Music Store/
 3. **Add to Cart**: Click the cart button on a product or in the Quick View modal.
 4. **Checkout**: Open the cart (top right) and click Checkout to simulate a purchase.
 
+## 📚 Documentation
+For a deep dive into the architecture, data flow, and the future improvement roadmap, please read the [Technical Overview](TECHNICAL_OVERVIEW.md).
+
 ## 📜 License
 
 This project is open source and available for personal and educational use.

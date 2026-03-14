@@ -65,5 +65,28 @@ const appState = {
 *   **Background**: Deep Purple/Black (`#120118`) for high contrast (OLED friendly).
 *   **Cards**: uses `backdrop-filter` to blend with the animated background.
 
-## 🚀 Future Scalability
+## 🚀 Future Scalability & Improvement Roadmap
+
 Currently, product data is hardcoded in `script.js`. For a real-world app, this array would be replaced by a `fetch()` call to a backend API (e.g., Node.js/Express) that queries a database (MongoDB/SQL).
+
+To elevate the "Neon Beats" music store from a static prototype to a feature-rich platform, we have outlined the following roadmap:
+
+### Phase 1: Enhanced UI/UX & Interactivity
+*   **Advanced Product Gallery**: Implement an Image Carousel in the Quick View and Product Cards (using Swiper.js) to allow zoom and different angles.
+*   **Smart Search & Formatting**: Add a Real-Time Search Bar with fuzzy matching using `Fuse.js`.
+*   **Dynamic "Related Products"**: Show "You might also like" in the Quick View modal based on category.
+
+### Phase 2: Data & Architecture
+*   **External Data Source (JSON)**: Move product data to `data/products.json` and use the `fetch()` API on page load to better simulate a real API.
+*   **Dedicated Product Pages**: Create a `product.html` template using URL parameters (e.g., `?id=p1`).
+*   **Persistent Cart & Wishlist**: More robust `localStorage` management and a Wishlist feature to heart items.
+
+### Phase 3: Functionality & Commerce
+*   **Realistic Checkout Experience**: Create a multi-step checkout modal with shipping validation and Stripe Elements simulation.
+*   **User Accounts (Mock)**: *Partially Implemented.* Connect the existing "Sign In" glassmorphic modal to `localStorage` to save user name and avatar.
+*   **Reviews & Ratings**: Allow users to add reviews and calculate dynamic average ratings.
+
+### Phase 4: Aesthetic Polish
+*   **Dark/Light Mode Toggle**: High-quality Light Mode using CSS variables keyed to system preferences.
+*   **Skeleton Loading**: Display "shimmer" placeholders while product images are loading.
+*   **Micro-interactions**: Add confident "Add to Cart" animations.
