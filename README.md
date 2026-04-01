@@ -26,8 +26,9 @@ Music Store/
 ├── index.html          # Main Storefront
 ├── script.js           # Store Logic (Cart, Filters, Modals)
 ├── styles.css          # Glassmorphism Theme & Animations
-└── assets/
-    └── images/         # Product images
+├── assets/
+│   └── images/         # Product images
+└── docs/               # Documentation Suite
 ```
 
 ## 🛠️ Technical Details
