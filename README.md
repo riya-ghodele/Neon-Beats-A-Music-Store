@@ -43,13 +43,26 @@ Music Store/
 3. **Add to Cart**: Click the cart button on a product or in the Quick View modal.
 4. **Checkout**: Open the cart (top right) and click Checkout to simulate a purchase.
 
-## 📚 Documentation
-For a deep dive into the architecture, data flow, and the future improvement roadmap, please read the [Technical Overview](TECHNICAL_OVERVIEW.md).
+## 📚 Documentation Suite
 
-## 📜 License
+This project includes a comprehensive set of documents for college submission and development:
 
-This project is open source and available for personal and educational use.
+-   [**Technical Report**](docs/TECHNICAL_REPORT.md) - Deep dive into architecture and data flow.
+-   [**User Guide**](docs/USER_GUIDE.md) - Instructions for the end visitor.
+-   [**Developer Docs**](docs/DEVELOPER_DOCS.md) - Function references and maintenance guide.
+-   [**Style Guide**](docs/STYLE_GUIDE.md) - Visual design tokens and UI/UX principles.
+-   [**Technical Overview**](TECHNICAL_OVERVIEW.md) - Original project breakdown.
+
+## 📜 Project History
+See the [**CHANGELOG.md**](CHANGELOG.md) for a full list of recent features and security/merge fixes.
 
 ---
 
-**Made with ❤️ for musicians.**
+### 🎓 College Project Submission
+**Project Name**: Neon Beats - Premium Music Store  
+**Platform**: Web Prototype (HTML5/CSS3/Vanilla JS)  
+**Developed by**: Riya Ghodele  
+**Status**: Final Release (v2.1.0)  
+
+**Made with ❤️ for the Final Year Submission.**
+
