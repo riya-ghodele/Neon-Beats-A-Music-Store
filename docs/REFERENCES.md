@@ -17,14 +17,18 @@ These documents provide a deep-dive into the development and maintenance of the 
 ---
 
 ## 2. External Technical References
-Core technologies and libraries utilized in the application.
+Specific resources and documentation used to implement the core features of Neon Beats.
 
-- **Remix Icon Library**: [https://remixicon.com/](https://remixicon.com/) (Used for all UI/UX iconography).
-- **Google Fonts (Outfit)**: [https://fonts.google.com/specimen/Outfit](https://fonts.google.com/specimen/Outfit) (Primary typography).
-- **MDN Web Docs (HTML5)**: [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- **MDN Web Docs (CSS3)**: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- **MDN Web Docs (JavaScript ES6+)**: [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- **GitHub CLI Documentation**: [https://cli.github.com/](https://cli.github.com/)
+1.  **Typography**: [Google Fonts - Outfit Family](https://fonts.google.com/specimen/Outfit) - The primary font for modern readability.
+2.  **Iconography**: [Remix Icon Library](https://remixicon.com/) - The source for all semantic interface icons.
+3.  **Design Pattern**: [Glassmorphism CSS Guide](https://glassmorphism.com/) - Visual reference for the "frosted glass" UI effects.
+4.  **Layout System**: [MDN CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) - Reference for the bento-grid and product catalog layout.
+5.  **State Management**: [Reactive State in Vanilla JS](https://css-tricks.com/small-reactive-state-management-vanilla-javascript/) - Architectural pattern for the `appState` logic.
+6.  **Persistence**: [Web Storage API (localStorage)](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) - Documentation for cart & session persistence.
+7.  **Performance**: [Native Image Lazy Loading](https://web.dev/browser-level-image-lazy-loading/) - Best practices for the `loading="lazy"` attribute.
+8.  **Visual Effects**: [CSS Backdrop Filter (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) - Technical specification for the glass blur effect.
+9.  **Documentation Visuals**: [Mermaid.js Documentation](https://mermaid.js.org/intro/) - Tooling used for the technical architecture diagrams.
+10. **Version Control CLI**: [GitHub CLI - gh auth login](https://cli.github.com/manual/gh_auth_login) - Reference for the remote session authentication flow.
 
 ---
 
