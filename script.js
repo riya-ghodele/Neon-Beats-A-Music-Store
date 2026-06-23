@@ -22,7 +22,7 @@ const products = [
     title: "Fender Stratocaster - Neon Edition",
     price: 125000,
     category: "guitars",
-    image: "assets/images/fender_strat.jpg",
+    image: "assets/images/fender_strat.png",
     rating: 4.9,
     description: "The classic Strat sound with a futuristic neon finish. Maple neck, alder body, and custom shop pickups."
   },
@@ -31,7 +31,7 @@ const products = [
     title: "Roland Synthesis Keyboard",
     price: 75000,
     category: "keyboards",
-    image: "assets/images/roland_synth.jpg",
+    image: "assets/images/roland_synth.png",
     rating: 4.8,
     description: "A powerhouse synthesizer with over 2000 sounds and intuitive controls for live performance."
   },
@@ -40,7 +40,7 @@ const products = [
     title: "Yamaha Stage Drum Kit",
     price: 110000,
     category: "drums",
-    image: "assets/images/yamaha_drums.jpg",
+    image: "assets/images/yamaha_drums.png",
     rating: 4.7,
     description: "Professional birch shells for recording and touring. Includes hardware and cymbals."
   },
@@ -49,7 +49,7 @@ const products = [
     title: "Audio-Technica Master Headphones",
     price: 16000,
     category: "accessories",
-    image: "assets/images/audiotechnica.jpg",
+    image: "assets/images/audiotechnica.png",
     rating: 4.9,
     description: "Reference quality open-back headphones for mixing and mastering."
   },
@@ -58,7 +58,7 @@ const products = [
     title: "Gibson Les Paul Standard",
     price: 210000,
     category: "guitars",
-    image: "assets/images/gibson_lespaul.jpg",
+    image: "assets/images/gibson_lespaul.png",
     rating: 5.0,
     description: "The iconic rock machine. Mahogany body with maple top for sustain and bite."
   },
@@ -67,7 +67,7 @@ const products = [
     title: "Shure SM7B Vocal Mic",
     price: 33000,
     category: "accessories",
-    image: "assets/images/shure_sm7b.jpg",
+    image: "assets/images/shure_sm7b.png",
     rating: 4.8,
     description: "The podcast and vocal standard. smooth, flat, wide-range frequency response."
   },
@@ -76,7 +76,7 @@ const products = [
     title: "Korg Minilogue Poly-Synth",
     price: 46000,
     category: "keyboards",
-    image: "assets/images/korg_minilogue.jpg",
+    image: "assets/images/korg_minilogue.png",
     rating: 4.6,
     description: "Next-gen analog synthesizer with 4-voice polyphony and built-in delay."
   },
@@ -85,7 +85,7 @@ const products = [
     title: "Martin D-28 Acoustic",
     price: 250000,
     category: "guitars",
-    image: "assets/images/martin_d28.jpg",
+    image: "assets/images/martin_d28.png",
     rating: 5.0,
     description: "The dreadnought by which all others are judged. Sitka spruce top and rosewood back."
   },
@@ -94,7 +94,7 @@ const products = [
     title: "Pioneer DJ Controller",
     price: 67000,
     category: "accessories",
-    image: "assets/images/pioneer_dj.jpg",
+    image: "assets/images/pioneer_dj.png",
     rating: 4.7,
     description: "4-channel performance DJ controller for rekordbox dj."
   },
@@ -139,24 +139,24 @@ document.addEventListener('DOMContentLoaded', () => {
   // Setup Listeners
   setupEventListeners();
 
-  // Remove loading overlay (fast!)
+  // Remove loading overlay (after 2 seconds)
   setTimeout(() => {
     try {
       const overlay = document.getElementById('loading-overlay');
       if (overlay) {
         overlay.style.opacity = '0';
-        overlay.style.transition = 'opacity 0.3s';
+        overlay.style.transition = 'opacity 0.5s ease-out';
         setTimeout(() => {
           overlay.style.display = 'none';
           overlay.style.visibility = 'hidden';
-        }, 300);
+        }, 500);
       } else {
         console.warn('Loading overlay element not found');
       }
     } catch (e) {
       console.error('Error hiding loading overlay:', e);
     }
-  }, 100);
+  }, 2000);
 });
 
 // ==========================================
