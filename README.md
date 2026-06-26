@@ -9,15 +9,12 @@ A premium e-commerce experience for musical instruments, built with modern HTML,
 
 <div align="center">
   <img src="assets/screenshots/Home%20Page%20Interface.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Home Page Interface"/>
-  <br>
   <img src="assets/screenshots/Product%20Catalog%20Interface.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Product Catalog Interface"/>
   <br>
   <img src="assets/screenshots/Product%20Category%20Filtering.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Product Category Filtering"/>
-  <br>
   <img src="assets/screenshots/Shopping%20Cart%20Panel.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Shopping Cart Panel"/>
   <br>
   <img src="assets/screenshots/Quick%20View%20Modal.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Quick View Modal"/>
-  <br>
   <img src="assets/screenshots/Checkout%20Interface.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Checkout Interface"/>
   <br>
   <img src="assets/screenshots/Success%20Confirmation%20Screen.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Success Confirmation Screen"/>
