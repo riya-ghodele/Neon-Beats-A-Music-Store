@@ -3258,3 +3258,35 @@ section {
   .contact-grid-redesign { grid-template-columns: 1fr; }
   .form-row-inline { grid-template-columns: 1fr; }
 }
+
+/* =========================================
+   Mobile Friendliness Fixes
+   ========================================= */
+@media (max-width: 480px) {
+  /* Fix checkout modal form overflowing */
+  .form-row {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Make navbar items fit on tiny screens */
+  .nav-logo span {
+    display: none; /* Hide text, keep logo on tiny screens */
+  }
+  
+  .btn-primary#login-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .nav-actions {
+    gap: 0.5rem;
+  }
+}
+
+/* Ensure mobile menu closes cleanly */
+.navbar .nav-menu.active {
+  z-index: 1000;
+}
+.nav-toggle {
+  z-index: 1002;
+}

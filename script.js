@@ -263,6 +263,12 @@ function setupEventListeners() {
       document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
       // Add to current
       this.classList.add('active');
+      
+      // Close mobile menu if it's open
+      const navMenu = document.getElementById('nav-menu');
+      if (navMenu && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+      }
     });
   });
 
