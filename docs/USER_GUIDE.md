@@ -1,5 +1,8 @@
 # 📖 Neon Beats: User Experience Guide
 
+<div align="center">
+  <img src="../assets/images/hero-bg.jpg" alt="Neon Beats Hero Banner" width="100%" style="border-radius: 12px; margin-bottom: 20px;"/>
+</div>
 Welcome to the **Neon Beats** project. This guide provides an overview of the platform's features from a user perspective, highlighting the interactions that make this music store premium.
 
 ---
@@ -15,10 +18,17 @@ No installation or account creation is required for this demo. Simply open `inde
 - **Splash Screen**: A sleek 2-second loading splash screen featuring the brand logo and pulse animation introduces the platform before seamlessly fading into the main storefront.
 
 ### 🛍️ Smart Browsing
+<div align="center">
+  <img src="../assets/screenshots/Product%20Category%20Filtering.png" alt="Category Filtering" width="80%" style="border-radius: 12px; margin: 20px 0; border: 1px solid #333;"/>
+</div>
+
 - **Dynamic Filtering**: Use the "Guitars", "Keyboards", "Drums", and "Accessories" buttons in the store section to instantly filter the catalog. Each transition is accompanied by a smooth crossfade animation.
 - **Product Overview**: Each item displays its category, title, average user rating, and realistic pricing in Indian Rupees (₹).
 
 ### 🕶️ Quick View Modal
+<div align="center">
+  <img src="../assets/screenshots/Quick%20View%20Modal.png" alt="Quick View Modal" width="60%" style="border-radius: 12px; margin: 20px 0; border: 1px solid #333;"/>
+</div>
 Clicking the **Eye Icon** on any product reveals the "Quick View" modal. This allows you to:
 - Read detailed product specifications.
 - View high-resolution imagery.
@@ -29,8 +39,11 @@ Click the **Sign In** button in the top navigation to experience our custom glas
 - **Simulation**: You can use any dummy credentials (e.g., `you@example.com`) to simulate a login.
 - **Result**: Upon successful "sign in", your navigation bar will update to show a personalized "Dashboard" state.
 
-### 🛒 High-Fidelity Shopping Cart
-- **Access**: Click the cart icon in the navigation bar to slide out the shopping panel.
+### 🛒 Sliding Shopping Cart
+<div align="center">
+  <img src="../assets/screenshots/Shopping%20Cart%20Panel.png" alt="Shopping Cart Panel" width="40%" style="border-radius: 12px; margin: 20px 0; border: 1px solid #333;"/>
+</div>
+The cart slides seamlessly from the right side of the screen when activated. Key features:
 - **Sticky Summary**: Even with many items, the checkout section and running total stay pinned to the bottom of the panel.
 - **Empty States**: If your cart is empty, you'll see a helpful message and a "Browse Store" shortcut.
 

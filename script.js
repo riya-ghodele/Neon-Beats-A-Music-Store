@@ -438,7 +438,7 @@ function openQuickView(productId) {
   document.getElementById('qv-title').textContent = product.title;
   document.getElementById('qv-rating').innerHTML = getStarRating(product.rating);
   document.getElementById('qv-description').textContent = product.description;
-  document.getElementById('qv-price').textContent = `₹${product.price}`;
+  document.getElementById('qv-price').textContent = `₹${product.price.toLocaleString()}`;
 
   // Update button to add specific product
   const btn = document.getElementById('qv-add-btn');
@@ -459,6 +459,11 @@ function openQuickView(productId) {
 }
 
 function openCheckout() {
+  if (appState.cart.length === 0) {
+    showNotification('Your cart is empty!', 'error');
+    return;
+  }
+  
   toggleCart(); // Close cart
   const modal = document.getElementById('checkout-modal');
 

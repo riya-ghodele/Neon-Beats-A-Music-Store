@@ -1,5 +1,8 @@
 # 🎨 Neon Beats: Style Guide & Design System
 
+<div align="center">
+  <img src="../assets/images/logo.png" alt="Neon Beats Logo" width="150" style="margin-bottom: 20px;"/>
+</div>
 This style guide documents the visual identity and UI/UX patterns used across the Neon Beats platform. This ensures design consistency and professional visual presentation.
 
 ---

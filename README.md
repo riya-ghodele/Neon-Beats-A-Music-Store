@@ -1,6 +1,19 @@
 # 🎸 Neon Beats - Premium Music Store
 
+<div align="center">
+  <img src="assets/images/logo.png" alt="Neon Beats Logo" width="200" style="margin-bottom: 20px;"/>
+</div>
 A premium e-commerce experience for musical instruments, built with modern HTML, CSS, and JavaScript. Features a stunning dark theme with glassmorphism effects and a seamless shopping experience.
+
+## 📸 Project Screenshots
+
+<div align="center">
+  <img src="assets/screenshots/Home%20Page%20Interface.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Home Page"/>
+  <img src="assets/screenshots/Product%20Catalog%20Interface.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Catalog"/>
+  <br/>
+  <img src="assets/screenshots/Shopping%20Cart%20Panel.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Shopping Cart"/>
+  <img src="assets/screenshots/Checkout%20Interface.png" width="48%" style="border-radius: 8px; border: 1px solid #333; margin: 1%;" alt="Checkout"/>
+</div>
 
 ## ✨ Features
 
