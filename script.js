@@ -266,8 +266,10 @@ function setupEventListeners() {
       
       // Close mobile menu if it's open
       const navMenu = document.getElementById('nav-menu');
+      const toggle = document.getElementById('nav-toggle');
       if (navMenu && navMenu.classList.contains('active')) {
         navMenu.classList.remove('active');
+        if (toggle) toggle.classList.remove('open');
       }
     });
   });
@@ -282,10 +284,25 @@ function setupEventListeners() {
     }
   });
 
-  // Mobile Nav Toggle
-  document.getElementById('nav-toggle').addEventListener('click', () => {
-    document.getElementById('nav-menu').classList.toggle('active');
+  // Mobile Nav Toggle — also toggles hamburger → X icon
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenuEl = document.getElementById('nav-menu');
+  navToggle.addEventListener('click', () => {
+    navMenuEl.classList.toggle('active');
+    navToggle.classList.toggle('open');
   });
+
+  // Mobile Sign In button (inside drawer) wires to same login modal
+  const mobileLoginBtn = document.getElementById('login-btn-mobile');
+  if (mobileLoginBtn) {
+    mobileLoginBtn.addEventListener('click', () => {
+      // Close the mobile menu first
+      navMenuEl.classList.remove('active');
+      navToggle.classList.remove('open');
+      // Trigger the same login modal as desktop btn
+      document.getElementById('login-btn').click();
+    });
+  }
 
   // Store Filters
   document.querySelectorAll('.filter-btn').forEach(btn => {

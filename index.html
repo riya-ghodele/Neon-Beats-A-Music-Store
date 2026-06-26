@@ -12,7 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   
   <!-- Custom Styles - Main CSS file -->
-  <link rel="stylesheet" href="styles.css?v=2.8">
+  <link rel="stylesheet" href="styles.css?v=3.0">
   
   <!-- Custom Logic - Main JS file -->
   <script src="script.js" defer></script>
@@ -40,6 +40,10 @@
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#store" class="nav-link">Store</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
+        <!-- Mobile-only actions inside drawer -->
+        <li class="nav-menu-mobile-actions">
+          <button class="btn-primary mobile-signin-btn" id="login-btn-mobile">Sign In</button>
+        </li>
       </ul>
       
       <!-- Navigation Actions: Cart and Login -->
@@ -183,28 +187,7 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       CONTACT/NEWSLETTER SECTION
-       Email subscription form with gradient effects
-       ========================================== -->
-  <section class="contact-section-redesign" id="contact">
-    <div class="container">
-      <!-- Newsletter Hero -->
-      <div class="newsletter-hero">
-        <div class="newsletter-glow"></div>
-        <h2 class="gradient-text">Stay in the Loop</h2>
-        <p>Get exclusive offers, new product alerts, and musician tips delivered to your inbox.</p>
-        <form class="newsletter-form-hero" id="newsletter-form">
-          <div class="input-group-hero">
-            <i class="ri-mail-line"></i>
-            <input type="email" placeholder="Enter your email" required id="newsletter-email">
-            <button type="submit" class="btn-primary">Subscribe</button>
-          </div>
-        </form>
-        <p class="newsletter-note">We respect your privacy. Unsubscribe anytime.</p>
-      </div>
-    </div>
-  </section>
+
 
   <!-- ==========================================
        FOOTER

@@ -17,7 +17,7 @@ This document provides a deep dive into the technical architecture, code structu
 ### 1. `index.html` (The Skeleton)
 The single-page entry point. It contains all the views, modals, and templates.
 *   **Navigation**: Fixed header with smooth scroll links.
-*   **Sections**: Hero (`#home`), Store Grid (`#store`), About (`#about`), Newsletter (`#contact`).
+*   **Sections**: Hero (`#home`), Store Grid (`#store`), About (`#about`).
 *   **Dynamic Containers**: Empty `div`s (like `#products-grid`, `#cart-items`) that JavaScript populates.
 *   **Modals**: Hidden-by-default overlays for `Quick View`, `Sign In`, and `Checkout`.
 *   **Localization**: Native integration of Indian Rupees (INR / `₹`) formatting across the UI and data layer.

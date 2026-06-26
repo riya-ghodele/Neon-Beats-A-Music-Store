@@ -4,6 +4,14 @@ All notable changes to the **Neon Beats** music store project are documented in 
 
 ---
 
+## [2.3.0] - 2026-06-26
+### 🎨 Fixed/Polished
+-   **Codebase Cleanup**: Removed a massive duplicated stylesheet block in `styles.css` (reducing size by ~48%), deleted leftover empty comments related to the music player, and cleared temporary browser/file-system debugging scripts.
+-   **Mobile Layout & UX**: Fixed a layout bug in the mobile stats view by shrinking the stats box size, using a 3-column grid layout, and adding proper vertical clearance above the hero title.
+-   **Desktop Navbar**: Resolved a duplicate "Sign In" button layout bug on desktop view by globally hiding the mobile-drawer action buttons.
+-   **Hero Background**: Reverted the hero section's background back to using the local high-fidelity `assets/images/hero-bg.jpg` file.
+-   **Subscription Form Cleanup**: Removed the redundant email subscription form section from below the about section.
+
 ## [2.2.0] - 2026-06-26
 ### ✨ Added
 -   **Splash Screen**: Implemented a 2-second loading splash screen featuring the brand logo and pulse animation.
