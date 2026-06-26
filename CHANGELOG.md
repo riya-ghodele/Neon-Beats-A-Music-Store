@@ -4,6 +4,18 @@ All notable changes to the **Neon Beats** music store project are documented in 
 
 ---
 
+## [2.2.0] - 2026-06-26
+### ✨ Added
+-   **Splash Screen**: Implemented a 2-second loading splash screen featuring the brand logo and pulse animation.
+-   **Hero Background**: Integrated a new high-resolution hero background image from Unsplash.
+
+### 🎨 Fixed/Polished
+-   **Bento Grid Redesign**: Completely overhauled the About section with a responsive, modern Bento Grid layout featuring glassmorphism and micro-animations.
+-   **Product Assets**: Integrated high-fidelity PNG product images for all 9 products (including the Gibson Les Paul Standard).
+-   **UI Cleanup**: Removed informal emojis from the footer, newsletter note, and checkout success message.
+
+---
+
 ## [2.1.0] - 2026-04-01
 ### ✨ Added
 -   **Sign In Modal**: Implemented a professional login/authentication simulation.

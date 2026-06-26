@@ -10,7 +10,7 @@ A premium e-commerce experience for musical instruments, built with modern HTML,
 - **🕶️ Quick View** - Instant product details modal without leaving the page.
 - **📱 Fully Responsive** - Beautiful glassmorphism design that works on all devices.
 - **📨 Newsletter** - Integrated subscription form.
-- **🎨 Modern UI** - Bento grid layout, smooth product filtering layout animations, and neon aesthetics.
+- **🎨 Modern UI** - Bento grid layout, smooth product filtering layout animations, 2-second launch splash screen, and neon aesthetics.
 
 ## 🚀 Getting Started
 
@@ -63,7 +63,7 @@ See the [**CHANGELOG.md**](CHANGELOG.md) for a full list of recent features and 
 **Project Name**: Neon Beats - Premium Music Store  
 **Platform**: Web Prototype (HTML5/CSS3/Vanilla JS)  
 **Developed by**: Riya Ghodele  
-**Status**: Final Release (v2.1.0)  
+**Status**: Final Release (v2.2.0)  
 
 **Made with ❤️ for the Final Year Submission.**
 

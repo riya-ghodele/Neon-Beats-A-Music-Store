@@ -56,3 +56,4 @@ Product cards utilize the **Glassmorphism** principle:
 1. **Staggered Entrance**: Items enter the grid one-by-one (`0.05s` delay) to lead the user's eye.
 2. **Smooth Transitions**: All hover and active states use a `0.3s cubic-bezier` easing for a "premium" feel.
 3. **Motion with Purpose**: We avoid excessive spinning/flashing; motion is exclusively used to indicate interaction or focus.
+4. **Pulse Animation**: The logo uses a subtle pulsing glow during the initial 2-second launch splash screen to build anticipation.

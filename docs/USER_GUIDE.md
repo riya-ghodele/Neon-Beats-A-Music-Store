@@ -11,6 +11,9 @@ No installation or account creation is required for this demo. Simply open `inde
 
 ## 2. Key User Features
 
+### 🚀 Launch Experience
+- **Splash Screen**: A sleek 2-second loading splash screen featuring the brand logo and pulse animation introduces the platform before seamlessly fading into the main storefront.
+
 ### 🛍️ Smart Browsing
 - **Dynamic Filtering**: Use the "Guitars", "Keyboards", "Drums", and "Accessories" buttons in the store section to instantly filter the catalog. Each transition is accompanied by a smooth crossfade animation.
 - **Product Overview**: Each item displays its category, title, average user rating, and realistic pricing in Indian Rupees (₹).
