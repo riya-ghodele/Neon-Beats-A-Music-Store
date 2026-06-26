@@ -28,7 +28,7 @@ A premium, high-fidelity e-commerce experience for musical instruments, built wi
 - **🔐 User Login / Sign In** - Interactive glassmorphic Sign In modal simulating full user authentication.
 - **🕶️ Quick View Modal** - Instant details modal for every instrument with real-time stock simulation.
 - **📱 Fully Responsive Mobile-First Design** - Beautiful layout optimized for desktop, tablet, and mobile devices with consolidated CSS.
-- **⚡ Advanced Sliding Loader Splash Screen** - Modern letter-sliding animation ("LOADING") spelling out loading steps with custom neon glow and automatic fade-out.
+- **⚡ Staggered Logo Loader Splash Screen** - Modern elastic letter-gathering animation spelling out "NEON BEATS" with alternating neon brand colors and automatic fade-out.
 - **🎨 Glassmorphic Bento Grid** - Modern, multi-dimensional grid layout in the About section detailing the shop's values, stats, and curated collections.
 
 ## 🚀 Getting Started

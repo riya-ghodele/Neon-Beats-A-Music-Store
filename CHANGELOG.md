@@ -11,7 +11,7 @@ All notable changes to the **Neon Beats** music store project are documented in 
 -   **Desktop Navbar**: Resolved a duplicate "Sign In" button layout bug on desktop view by globally hiding the mobile-drawer action buttons.
 -   **Hero Background**: Reverted the hero section's background back to using the local high-fidelity `assets/images/hero-bg.jpg` file.
 -   **Subscription Form Cleanup**: Removed the redundant email subscription form section from below the about section.
--   **Visual Polish**: Upgraded the splash screen's loading indicator to a modern, neon-accented letter-sliding animation ("LOADING").
+-   **Visual Polish**: Upgraded the splash screen's loading indicator to a modern, neon-accented letter-gathering animation spelling "NEON BEATS" with alternating brand colors.
 
 ## [2.2.0] - 2026-06-26
 ### ✨ Added

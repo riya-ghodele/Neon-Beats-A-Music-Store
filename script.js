@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Setup Listeners
   setupEventListeners();
 
-  // Remove loading overlay (after 2 seconds)
+  // Remove loading overlay (after 2.5 seconds to let NEON BEATS text fully gather and display)
   setTimeout(() => {
     try {
       const overlay = document.getElementById('loading-overlay');
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (e) {
       console.error('Error hiding loading overlay:', e);
     }
-  }, 2000);
+  }, 2500);
 });
 
 // ==========================================
