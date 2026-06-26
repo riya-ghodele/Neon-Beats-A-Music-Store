@@ -26,7 +26,7 @@ The single-page entry point. It contains all the views, modals, and templates.
 Handles the visual presentation using a **Mobile-First** approach.
 *   **CSS Variables (`:root`)**: Defines the "Theme" (colors like `--primary`, `--dark`, spacing, shadows). This makes changing the color scheme easy.
 *   **Glassmorphism**: The signature "frosted glass" look is achieved using `backdrop-filter: blur()` and semi-transparent backgrounds (`rgba`).
-*   **Animations**: Custom keyframes for `fadeInUp`, `slideIn`, and `spin` (loading).
+*   **Animations**: Custom keyframes for `fadeInUp`, `slideIn`, and `gatherLetter` (loading screen letters).
 *   **Responsiveness**: Media queries (`@media`) adjust the layout (grid columns, font sizes) for Tablets (768px) and Mobile (480px).
 
 ### 3. `script.js` (The Brain)

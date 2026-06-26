@@ -7,11 +7,11 @@ This document compiles all the internal and external references used in the deve
 ## 1. Internal Project Documentation
 These documents provide a deep-dive into the development and maintenance of the platform.
 
-- [**Technical Project Report**](docs/TECHNICAL_REPORT.md) - System architecture, data flow, and technical implementation.
-- [**User Experience Guide**](docs/USER_GUIDE.md) - Features overview and interaction manual for end visitors.
-- [**Developer & Maintenance Docs**](docs/DEVELOPER_DOCS.md) - API/Function reference and catalog update instructions.
-- [**Style Guide & Design System**](docs/STYLE_GUIDE.md) - Color palette, typography, and UI/UX design tokens.
-- [**Project Changelog**](CHANGELOG.md) - Detailed record of all enhancements and version history.
+- [**Technical Project Report**](TECHNICAL_REPORT.md) - System architecture, data flow, and technical implementation.
+- [**User Experience Guide**](USER_GUIDE.md) - Features overview and interaction manual for end visitors.
+- [**Developer & Maintenance Docs**](DEVELOPER_DOCS.md) - API/Function reference and catalog update instructions.
+- [**Style Guide & Design System**](STYLE_GUIDE.md) - Color palette, typography, and UI/UX design tokens.
+- [**Project Changelog**](../CHANGELOG.md) - Detailed record of all enhancements and version history.
 - [**Technical Overview**](TECHNICAL_OVERVIEW.md) - Original project breakdown and tech stack summary.
 
 ---

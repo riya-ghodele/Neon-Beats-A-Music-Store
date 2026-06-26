@@ -83,7 +83,7 @@ The visual identity relies on **Advanced CSS3**. Key properties used include:
 4. **Sync**: Triggers `updateCartUI()` to refresh the sidebar and `localStorage` to persist the session.
 
 ### 4.2 Checkout Simulation
-A multi-stage sequence involving **DOM manipulation masks**. The system simulates a backend delay (1.5s) using `setTimeout`, showing a loading spinner before clearing the state and presenting a success modal.
+A multi-stage sequence involving **DOM manipulation masks**. The system simulates a backend delay (1.5s) using `setTimeout`, showing the brand logo and glowing radiant letter-gathering loader before clearing the state and presenting a success modal.
 
 ---
 

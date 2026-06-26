@@ -15,7 +15,7 @@ No installation or account creation is required for this demo. Simply open `inde
 ## 2. Key User Features
 
 ### 🚀 Launch Experience
-- **Splash Screen**: A sleek 2-second loading splash screen featuring the brand logo and pulse animation introduces the platform before seamlessly fading into the main storefront.
+- **Splash Screen**: A sleek 2.5-second loading splash screen featuring the brand logo, pulse animation, and radiant "NEON BEATS" letter-gathering animation introduces the platform before seamlessly fading into the main storefront.
 
 ### 🛍️ Smart Browsing
 <div align="center">
